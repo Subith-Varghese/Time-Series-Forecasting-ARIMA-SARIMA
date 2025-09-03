@@ -1,13 +1,13 @@
 # ✈️ Airline Passenger Forecasting using ARIMA & SARIMA
 
-## 📌 Project Overview
+## Project Overview
 This project focuses on **forecasting airline passenger traffic** using **Time Series Analysis** techniques.  
 We use the famous **Airline Passengers dataset**, which contains the number of international airline passengers from **1949 to 1960**.  
 The main objective is to **analyze historical data**, make the series **stationary**, and **predict future passenger counts** using **ARIMA** and **SARIMA** models.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 - Perform **Exploratory Data Analysis (EDA)** on airline passenger data.
 - Check **stationarity** using:
   - Rolling Mean & Standard Deviation
@@ -31,21 +31,21 @@ The main objective is to **analyze historical data**, make the series **stationa
 ---
 
 ## 🧠 Concepts Covered
-### 1️⃣ Time Series Stationarity Check
+### 1. Time Series Stationarity Check
 - **Before Transformation**:
   - Rolling mean & standard deviation **not constant**
   - ADF p-value ≈ **0.99** → **Non-stationary**
 - **After Log Transformation + Rolling Differencing**:
   - ADF p-value ≈ **0.02** → **Stationary** ✅
 
-### 2️⃣ ARIMA & SARIMA Models
+### 2. ARIMA & SARIMA Models
 - **ARIMA (Auto-Regressive Integrated Moving Average)**:
   - Selected using PACF & ACF plots.
   - **Order (p, d, q) = (2, 0, 3)**
 - **SARIMA (Seasonal ARIMA)**:
   - Added seasonality: `(2, 0, 3, 12)`
 
-### 3️⃣ Forecasting
+### 3. Forecasting
 - Forecasted for:
   - **24 months** (2 years)
   - **60 months** (5 years)
